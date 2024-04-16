@@ -62,7 +62,7 @@ const Banner = () => {
 
         <SwiperSlide className="">
           <div data-aos="fade-down"
-             data-aos-duration="3000"
+             data-aos-duration="4000"
             style={{
               backgroundImage: `url('/banner1.1.jpg')`,
               backgroundSize: "cover",
@@ -72,13 +72,13 @@ const Banner = () => {
             }}
           >
             <div data-aos="zoom-out-left">
-            <h1 className="text-[40px] text-amber-600 font-extrabold p-5">Our homes are meticulously curated to exceed your expectations. Your ideal living space awaits.</h1>
+            <h1 className=" text-[20px] lg:text-[40px] text-amber-600 font-extrabold p-3 lg:p-5">Our homes are meticulously curated to exceed your expectations. Your ideal living space awaits.</h1>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
           <div data-aos="fade-down"
-             data-aos-duration="3000"
+             data-aos-duration="5000"
             style={{
               backgroundImage: `url('/banner3.3.jpg')`,
               backgroundSize: "cover",
@@ -87,12 +87,12 @@ const Banner = () => {
               borderRadius: "20px",
             }}
           >
-            <h1 className="text-[30px] text-white font-bold p-5">Unlock the door to your dream home with our exclusive collection of residential properties. From cozy cottages to sprawling estates, we have something to cater to every taste and lifestyle.</h1>
+            <h1 className=" text-[18px] lg:text-[30px] text-white font-bold p-5">Unlock the door to your dream home with our exclusive collection of residential properties. From cozy cottages to sprawling estates, we have something to cater to every taste and lifestyle.</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide className="">
           <div  data-aos="fade-down"
-             data-aos-duration="3000"
+             data-aos-duration="6000"
             style={{
               backgroundImage: `url('/banner1.jpg')`,
               backgroundSize: "cover",
@@ -101,7 +101,7 @@ const Banner = () => {
               borderRadius: "20px",
             }}
           >
-            <h1 className="text-[30px] text-gray-700 font-bold p-5"> Step into the realm of exquisite living with our exceptional selection of homes. Each property we offer is crafted to perfection, promising not just a residence but an experience of a lifetime.</h1>
+            <h1 className="text-[18px] lg:text-[30px] text-yellow-400 font-bold p-5"> Step into the realm of exquisite living with our exceptional selection of homes. Each property we offer is crafted to perfection, promising not just a residence but an experience of a lifetime.</h1>
           </div>
         </SwiperSlide>
       </Swiper>

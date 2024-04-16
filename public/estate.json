@@ -1,0 +1,83 @@
+[
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzlv1rwhHQ_oA_u6-oEMmTzODFsNnPWL0ct7TONUtBA&s",
+      "estate_title": "Spacious Single Family Home",
+      "id": "1",
+      "segment_name": "Suburban Estates",
+      "description": "Enjoy the epitome of suburban living in this spacious single-family home. With multiple bedrooms, a large backyard, and modern amenities, this property is perfect for families seeking comfort and convenience.",
+      "price": "$450,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbciRjFSTxjPpUxguPdDnS1OAuOo7dV4KLnqx0o3rC7w&s",
+      "estate_title": "Modern Townhouse",
+      "id": "2",
+      "segment_name": "Cityscape Residences",
+      "description": "Experience urban living at its finest in this sleek and modern townhouse. Featuring contemporary design, rooftop terrace, and proximity to downtown amenities, this property offers the perfect blend of style and convenience.",
+      "price": "$3,500/month",
+      "status": "rent"
+    },
+    {
+      "image": "https://www.apartments.com/blog/sites/default/files/styles/small/public/image/2023-06/ParkLine-apartment-in-Miami-FL.jpg?itok=e9OGR_ew",
+      "estate_title": "Luxury Apartment",
+      "id": "3",
+      "segment_name": "Metropolitan Towers",
+      "description": "Indulge in luxury living with this stunning apartment in the heart of the city. Boasting panoramic views, upscale amenities, and concierge services, this residence offers an unparalleled urban lifestyle.",
+      "price": "$1,200,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRGHfXIpv64UM-DGAawkhFIbLWuHQjhYTnrhIpBFddew&s",
+      "estate_title": "Student Housing Complex",
+      "id": "4",
+      "segment_name": "University Commons",
+      "description": "Experience convenient student living in this modern housing complex located near campus. With furnished apartments, study lounges, and recreational facilities, this property provides the perfect environment for academic success.",
+      "price": "$800/month",
+      "status": "rent"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWrgbx3wNdH6aidastsZBP-DoFAQag4JVKhfCt91sUmg&s",
+      "estate_title": "Senior Living Community",
+      "id": "5",
+      "segment_name": "Golden Years Village",
+      "description": "Discover vibrant senior living in this welcoming community designed for active retirees. With wellness programs, social activities, and onsite amenities, residents can enjoy a fulfilling and enriching lifestyle.",
+      "price": "$350,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxeZTcTt8mmLGwx9Dbd0GF1w59iTTKe3g5EHJdV0bDuA&s",
+      "estate_title": "Luxury Vacation Rental",
+      "id": "6",
+      "segment_name": "Coastal Retreats",
+      "description": "Escape to paradise with this luxurious vacation rental located in a scenic coastal destination. With private beach access, infinity pool, and concierge services, this property promises an unforgettable holiday experience.",
+      "price": "$500/night",
+      "status": "rent"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmT-s3st9wS_7WWBT7lWhe9ccDa07tdBLiQjx2yPQUg&s",
+      "estate_title": "Cozy Family Home",
+      "id": "7",
+      "segment_name": "Suburban Estates",
+      "description": "Embrace the warmth of family living in this cozy single-family home. With a fireplace, spacious backyard, and peaceful neighborhood, this property offers the perfect setting for creating lasting memories.",
+      "price": "$320,000",
+      "status": "sale"
+    },
+    {
+      "image": "https://a0.muscache.com/im/pictures/miso/Hosting-831795418837868282/original/951a45c8-07b8-4886-853b-2ee20a0f0be6.jpeg?im_w=720",
+      "estate_title": "Elegant Townhouse",
+      "id": "8",
+      "segment_name": "Urban Enclave",
+      "description": "Experience urban elegance in this beautifully appointed townhouse located in a vibrant neighborhood. With gourmet kitchen, private patio, and proximity to trendy cafes and boutiques, this property defines modern city living.",
+      "price": "$4,000/month",
+      "status": "rent"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgf3Pt7R3tUKGxoAoulCASOT6eriDFUi4X5i_M9dkvFw&s",
+      "estate_title": "Downtown Penthouse",
+      "id": "9",
+      "segment_name": "Metropolitan Towers",
+      "description": "Live the high life in this luxurious downtown penthouse offering breathtaking views and unparalleled amenities. With designer finishes, expansive living spaces, and 24/7 concierge, this residence sets a new standard of urban living.",
+      "price": "$2,500,000",
+      "status": "sale"
+    }
+  ]

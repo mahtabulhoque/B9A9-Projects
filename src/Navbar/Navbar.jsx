@@ -4,7 +4,7 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/home">Home</NavLink>
+        <NavLink to="/">Home</NavLink>
       </li>
       <li>
         <NavLink to="/update-profile">Update profile</NavLink>
@@ -37,14 +37,14 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-500 rounded-box w-52 border"
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-500 rounded-box w-52 border text-xl"
           >
             {
               links
             }
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <a className="btn btn-ghost text-[#bb1515] font-bold text-5xl">Homies</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
