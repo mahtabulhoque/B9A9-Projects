@@ -12,12 +12,8 @@ const EstateDetails = () => {
 
   console.log(estate);
 
-  const getItemsFromLS = (key) => {
-    const data = localStorage.getItem(key);
-    return data ? JSON.parse(data) : [];
-  };
- console.log(getItemsFromLS);
-  // const [estatess, setEstates] = useState(getItemsFromLS());
+
+
 
 
  
