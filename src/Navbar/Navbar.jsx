@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const links = (
@@ -10,7 +10,7 @@ const Navbar = () => {
         <NavLink to="/update-profile">Update profile</NavLink>
       </li>
       <li>
-        <NavLink to="/user-profile">User profile</NavLink>
+        <NavLink to="/register">Register</NavLink>
       </li>
     </>
   );
@@ -39,23 +39,33 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-500 rounded-box w-52 border text-xl"
           >
-            {
-              links
-            }
+            {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-[#bb1515] font-bold text-5xl">Homies</a>
+        <a className="btn btn-ghost text-[#bb1515] font-bold text-5xl">
+          Homies
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          {
-            links
-          }
-        </ul>
+        <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
-      
+
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <div
+          tabIndex={0}
+          role="button"
+          className="btn btn-ghost btn-circle avatar"
+        >
+          <div className="w-10 rounded-full">
+            <img
+              alt="Tailwind CSS Navbar component"
+              src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+            />
+          </div>
+        </div>
+        <Link to='/update-profile'>
+          <button className="btn">Login</button>
+        </Link>
       </div>
     </div>
   );

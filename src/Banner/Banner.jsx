@@ -1,3 +1,4 @@
+import 'animate.css';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -101,7 +102,7 @@ const Banner = () => {
               borderRadius: "20px",
             }}
           >
-            <h1 className="text-[18px] lg:text-[30px] text-yellow-400 font-bold p-5"> Step into the realm of exquisite living with our exceptional selection of homes. Each property we offer is crafted to perfection, promising not just a residence but an experience of a lifetime.</h1>
+            <h1 className="text-[18px] lg:text-[30px] text-yellow-400 font-bold p-5 animate__animated animate__bounce"> Step into the realm of exquisite living with our exceptional selection of homes. Each property we offer is crafted to perfection, promising not just a residence but an experience of a lifetime.</h1>
           </div>
         </SwiperSlide>
       </Swiper>

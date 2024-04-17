@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../Layout/Root";
 import Home from "../Pages/Home/Home";
 import UpdateProfile from "../UpdateProfile/UpdateProfile";
-import UserProfile from "../UserProfile/UserProfile";
+import Register from "../Register/Register";
 
 
 const router = createBrowserRouter([
@@ -19,8 +19,8 @@ const router = createBrowserRouter([
                 element:<UpdateProfile></UpdateProfile>
             },
             {
-                path:'/user-profile',
-                element:<UserProfile></UserProfile>
+                path:'/register',
+                element:<Register></Register>
             }
         ]
     }
