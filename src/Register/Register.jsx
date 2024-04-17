@@ -108,6 +108,7 @@ const Register = () => {
         </div>
       </div>
       <ToastContainer />
+      
     </div>
   );
 };
