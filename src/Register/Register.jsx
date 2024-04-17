@@ -1,45 +1,51 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
+  const { createUser } = useContext(AuthContext);
+  const [error, setError] = useState(null);
 
-  const {createUser} = useContext(AuthContext)
-
-
-  const handleRegister = e =>{
+  const handleRegister = (e) => {
     e.preventDefault();
-    console.log(e.currentTarget);
     const form = new FormData(e.currentTarget);
-    const name = form.get('name');
-    const photo = form.get('photo');
-    const email = form.get('email');
-    const password = form.get('password');
-    console.log(name, photo, email, password);
+    const name = form.get("name");
+    const photo = form.get("photo");
+    const email = form.get("email");
+    const password = form.get("password");
 
+   
+    const UpperCase = /[A-Z]/.test(password);
+    const LowerCase = /[a-z]/.test(password);
+    const Length = password.length >= 6;
 
-    createUser(email,password)
-    .then(result =>{
-      console.log(result.user);
-    })
-    .catch(error =>{
-      console.error(error);
-    })
-}
+    if (!UpperCase || !LowerCase || !Length) {
+      setError("Password must contain at least one uppercase letter, one lowercase letter, and be at least 6 characters long.");
+      return;
+    }
 
-
-
+    createUser(email, password)
+      .then((result) => {
+        toast.success("Registration successful!"); 
+        console.log(result.user);
+      })
+      .catch((error) => {
+        toast.error(error.message); 
+        console.error(error);
+      });
+  };
 
   return (
     <div className="hero min-h-screen rounded-3xl">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Register Here</h1>
-          <p className="py-6 text-2xl">Please fillup this form</p>
+          <p className="py-6 text-2xl">Please fill up this form</p>
         </div>
         <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
           <form onSubmit={handleRegister} className="card-body">
-
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Name</span>
@@ -48,7 +54,7 @@ const Register = () => {
                 type="text"
                 required
                 name="name"
-                placeholder="name"
+                placeholder="Name"
                 className="input input-bordered"
               />
             </div>
@@ -59,7 +65,7 @@ const Register = () => {
               <input
                 type="text"
                 required
-                name="Photo"
+                name="photo"
                 placeholder="Photo URL"
                 className="input input-bordered"
               />
@@ -72,28 +78,23 @@ const Register = () => {
                 type="email"
                 required
                 name="email"
-                placeholder="email"
+                placeholder="Email"
                 className="input input-bordered"
               />
             </div>
-            
             <div className="form-control">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
               <input
                 type="password"
-                placeholder="password"
+                placeholder="Password"
                 className="input input-bordered"
                 required
                 name="password"
               />
-              <label className="label">
-                <a href="#" className="label-text-alt link link-hover">
-                  Forgot password?
-                </a>
-              </label>
             </div>
+            {error && <p className="text-red-500">{error}</p>}
             <div className="form-control mt-6">
               <button className="btn btn-primary">Register</button>
             </div>
@@ -106,6 +107,7 @@ const Register = () => {
           </p>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 };
