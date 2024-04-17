@@ -1,19 +1,39 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 
 
 const UpdateProfile = () => {
+  const {logIn} = useContext(AuthContext);
+  const location = useLocation();
+  const navigate= useNavigate();
+  console.log(location);
 
 
-  const handleLogin = e =>{
-     e.preventDefault();
-     console.log(e.currenTarget);
-     const form= new FormData(e.currenTarget);
-     console.log(form);
-  }
+
+  const handleLogin = e => {
+    e.preventDefault();
+    console.log(e.currentTarget);
+    const form = new FormData(e.currentTarget);
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email,password);
+    logIn(email,password)
+    .then(result =>{
+      console.log(result.user);
+
+      navigate(location?.state ? location.state : '/');
+    })
+    .catch(error =>{
+      console.error(error);
+    })
+    
+}
+
 
 
   return (
-    <div className="hero min-h-screen bg-yellow-200 rounded-3xl">
+    <div className="hero min-h-screen bg-gray-200 rounded-3xl">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
