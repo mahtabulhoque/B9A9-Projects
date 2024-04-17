@@ -20,7 +20,8 @@ const router = createBrowserRouter([
             },
             {
                 path: '/estate/:id',
-                element:<PrivateRoutes><EstateDetails></EstateDetails></PrivateRoutes>
+                element:<PrivateRoutes><EstateDetails></EstateDetails></PrivateRoutes>,
+                loader:()=> fetch('/estate.json'),
             },
             {
                 path:'/update-profile',
